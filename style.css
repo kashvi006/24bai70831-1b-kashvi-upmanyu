@@ -1,64 +1,103 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f2f4f8;
-    font-family: Arial, Helvetica, sans-serif;
+    background: #7b8494;
 }
 
-.profile-card {
+.card {
     width: 320px;
-    background: #ffffff;
-    border-radius: 16px;
-    text-align: center;
-    padding: 25px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #3a3f47;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
 }
 
-.profile-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+.card-header {
+    background: #eef1f4;
+    padding: 18px;
+    text-align: center;
 }
+
+.card-header h2 {
+    color: #333;
+    font-size: 22px;
+}
+
+.card-body {
+    padding: 25px 20px;
+    text-align: center;
+    color: #eaeaea;
+}
+
 .profile-img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    object-fit: cover; /* Important */
-}
-
-.name {
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
-}
-
-.role {
-    font-size: 14px;
-    color: #777;
-    margin: 5px 0 12px;
+    object-fit: cover;
+    border: 4px solid #8faaff;
+    margin-bottom: 15px;
 }
 
 .description {
     font-size: 14px;
-    color: #555;
-    margin-bottom: 20px;
     line-height: 1.5;
+    margin-bottom: 20px;
+    color: #d3d6db;
 }
 
-.social-links a {
-    text-decoration: none;
-    margin: 0 8px;
-    color: white;
-    background: #4f46e5;
-    padding: 8px 14px;
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.stats h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.stats span {
+    font-size: 12px;
+    color: #b0b4bb;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 48%;
+    padding: 10px 0;
+    border: none;
     border-radius: 20px;
     font-size: 14px;
-    transition: background 0.3s ease;
+    cursor: pointer;
 }
 
-.social-links a:hover {
-    background: #3730a3;
+.follow {
+    background: #4f7cff;
+    color: #fff;
+}
+
+.follow:hover {
+    background: #3a66e0;
+}
+
+.message {
+    background: #e6e6e6;
+    color: #333;
+}
+
+.message:hover {
+    background: #d4d4d4;
 }
